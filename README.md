@@ -1,34 +1,15 @@
 # AI Junior Developer (Intern) Test 
-Welcome! and thank you for applying! 
+This is a chatbot made to answer questions related to science. 
 
-## Requirement
-The current project has the blueprint structure of an AI App. 
+## Steps to run the console application
+* Clone the repository to your local desktop and move to the location in terminal.
+* Make sure you change the `science.txt` file location in line no 16 in `main.py`
+* Make sure you have Python version 3.8 running in yout terminal. Else follow the steps in the below page. Consider 3.8 as the required version. https://stackoverflow.com/questions/62898911/how-to-downgrade-python-version-from-3-8-to-3-7-mac
+*  In terminal, give this command `./start.sh`
+* Start typing questions and conclude with `thanks`.
 
-Your mission is to implement an 💬NLP chatbot **answering questions about science**. 
-
-You will add your logic to the `main.py` file inside the `execute` function. 
-```python
-def execute(request: SimpleText, ray: OpenfabricExecutionRay) -> SimpleText:
-    output = []
-    for text in request.text:        
-        response = '' # <<< --Your magic goes here
-        output.append(response)
-
-    return SimpleText(dict(text=output))
-```
-## Constraints and restrictions
-You are free to use any package or library you see feet as long as you follow these rules:
-* 👎 You can't call any external service (e.g. chatGPT) 
-* 👎 You can't copy and paste from other peoples work 
-
-## Run
-The application can be executed in two different ways:
-* locally by running the `start.sh` 
-* on in a docker container using `Dockerfile` 
-
-## Submission
-Your solution must be uploaded on GitHub, and submit us the link in **max 1 week** after receiving the task.
-
-## Note
-Keep in mind that this is the project that will be used to evaluate your skills.
-So we do expect you to make sure that the app is fully functional and doesn't have any obvious missing pieces.
+## Feedback on Assignment
+* Its a great experience working on this assignment. Working on new class like SimpleText made me learn different types of execution methods.
+* Although we have SimpleText to pass text data, since it can pass a preloaded set of questions, I have also included a conversational chatbot feature.
+* I have created a text file with information on science and applied NLP techniques such as tokenization, lemmatization, and cosine similarity on the text.
+* The chatbot answers the questions based on the cosine similarity of the text.
